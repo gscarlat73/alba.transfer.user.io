@@ -42,6 +42,30 @@
 </head>
 
 <body>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCartiJKDCbjxPFCqqcjUe7COQxUjDa4mI",
+    authDomain: "go-ride-9dc1b.firebaseapp.com",
+    databaseURL: "https://go-ride-9dc1b-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "go-ride-9dc1b",
+    storageBucket: "go-ride-9dc1b.appspot.com",
+    messagingSenderId: "248645488830",
+    appId: "1:248645488830:web:2b4354a425b2c067580eef",
+    measurementId: "G-646NRXD6V4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   <script>
     window.addEventListener('load', function (ev) {
       // Download main.dart.js
